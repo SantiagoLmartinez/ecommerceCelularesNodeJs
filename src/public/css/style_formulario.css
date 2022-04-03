@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+body, body main h2{
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+header{
+    background-color: white;
+    
+}
+
+body main h1{
+    text-align: center;
+}
+
+body main h2{
+    color: black;
+    text-align: center;
+    padding-bottom: 20px;
+}
+/* fondo de perrito
+main{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/formularioFondo2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+*/
+form{
+    padding: 20px;
+    padding-bottom: 50px;
+    align-items: center;
+    width: 50%;
+    height: 1200px;
+    background-color: rgba(255, 196, 0, 0.959);
+    margin: auto;
+}
+
+form h4{
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+main h1, form h3{
+    font-weight: 600;
+    font-size: 35px;
+}
+
+form h5{
+    font-weight: 600;
+    font-size: 25px;
+}
+
+form h3, form h5, form h6{
+    margin-bottom: 10px;
+}
+
+form h6{
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+label{
+    display: block;
+    padding-top: 5px;
+}
+
+.textarea{
+    resize: none;
+    overflow-y: scroll;
+    width:500px;
+    height:100px
+}
+
+#button_enviar {
+    background-color: #e7e7e7;
+    border: 1px solid black;
+    border-radius: 8px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin-top: 10px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+#button_enviar:hover {
+    background-color: rgb(102, 204, 51); /* Green */
+    color: white;
+}
+
+#button_volver {
+    background-color: rgb(255, 30, 0);
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin-top: 100px;
+
+}

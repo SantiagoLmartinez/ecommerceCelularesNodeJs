@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*fondo de perritos*/
+body {
+    background-image: url("../img/fondo.gif");
+    background-repeat: repeat;
+}
+
+
+.main{
+    width: 100%;
+    margin: 0 auto; 
+}
+
+.portada-Main{
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    /* justify-content: center;
+    align-items: center; */
+
+}
+
+.img-main{
+    margin: 0 auto;
+    width: 600px;
+}
+.imgMirada {
+    margin: 0 auto;
+    /* margin:10px auto; */
+    display:block;
+    width: 80%;   
+}
+
+/* PIZARRA MASCOTAS */
+#mascotaContainer img{
+    width: 100%;
+    height: 200px;
+}
+/* carrousel */
+.carru-img {
+    margin: 0 auto;
+    width: 100%;
+    object-fit: contain;
+    /* height: 600px; */
+}
+
+/* Footer */
+.integrantesFooter  li{
+    /* text-decoration: none; */
+    list-style: none;
+}
+.integrantesFooter  a{
+    text-decoration: none;
+}
+
+/* media query */
+
+@media (max-width: 800px) { 
+    .imgMirada {
+        /* margin: 0 auto; */
+        /* margin:10px auto; */
+        /* display:block; */
+        width: 100%;
+        
+    }
+}
+
+/* listado consejos de adopcion*/
+.listado {
+  background-color: rgba(255, 196, 0, 0.959);
+  margin: 20px 150px 150px 150px;
+  width: 75%;
+  padding: 40px;
+
+}
+
+/* portada-Main texto index*/
+
+.portada-Main {
+    background-color: rgba(255, 196, 0, 0.959);
+    margin: 20px 100px 30px 170px;
+    width: 75%;
+    padding: 40px;
+}
+
+/* pizarra de adopciones texto index*/
+
+.pizarra {
+    background-color: rgba(255, 196, 0, 0.959);
+    margin: 20px 100px 30px 0px;
+    width: 100%;
+    padding: 30px;
+}
+
+/* organizaciones texto index*/
+
+.organizaciones {
+    background-color: rgba(255, 196, 0, 0.959);
+    margin: 20px 100px 30px 0px;
+    width: 100%;
+    padding: 30px;
+}

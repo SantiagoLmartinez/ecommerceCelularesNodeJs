@@ -1,0 +1,31 @@
+*{margin: 0;padding: 0; box-sizing: border-box; }
+
+.header-Nav{
+    background-color: rgb(255, 208, 0);
+    padding: 1em;
+    font-size: 1em;
+}
+.bg_header{
+    background-color: rgb(255, 208, 0);
+}
+.bg_hover:hover{
+    background-color: #000;
+    color: #fff;
+}
+/* .nav-btn{ */
+    /* background-color: #000; */
+    /* color: #fff; */
+/* } */
+
+.icon-nav{
+    margin-right: 1em;
+}
+.icon-nav a{ 
+    margin: 10px;
+    font-weight:600 ;
+}
+
+#img-nav{
+    width: 35px;
+    
+}
