@@ -1,5 +1,11 @@
 const express = require('express')
-const { leerCelulares, agregarCelulares,leerCelularesCRUD } = require('../controllers/celulares.controllers')
+const { 
+        leerCelulares,
+        agregarCelulares,
+        leerCelularesCRUD,
+        eliminarCelularCRUD, 
+        editarCelularCRUDform,
+        editarCelularCRUD} = require('../controllers/celulares.controllers')
 const router = express.Router()
 
 
@@ -9,9 +15,12 @@ router.post('/celCrud', agregarCelulares)
 
 router.get('/celCrud',  leerCelularesCRUD)
 
-// (req,res)=>{
-//     res.render('formCelulares')
-// }
+router.get('/celCrud/eliminar/:id',  eliminarCelularCRUD)
+
+router.get('/celCrud/editar/:id',  editarCelularCRUDform)
+router.post('/celCrud/editar/:id',  editarCelularCRUD)
+
+
 router.get('/FAQ', (req,res)=>{
     res.render('FAQ')
 })

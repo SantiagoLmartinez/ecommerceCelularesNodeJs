@@ -8,10 +8,10 @@
                 <p>Celular {{this.marca}} {{this.modelo}}</p>
                 <p>Precio: $ <span class="badge rounded-pill bg-info text-dark">{{this.precio}}</span></p>
                 <div class="mb-2">
-                    <button href="#" class="btn btn-secondary w-100">Editar</button>
+                    <a href="/celCrud/editar/{{this._id}}" class="btn btn-secondary w-100">Editar</a>
                 </div>
                 <div class="mb-2">
-                    <button href="#" class="btn btn-danger w-100">Eliminar</button>
+                    <a href="/celCrud/eliminar/{{this._id}}" class="btn btn-danger w-100">Eliminar</a>
                 </div>
         </div>
     </div>
