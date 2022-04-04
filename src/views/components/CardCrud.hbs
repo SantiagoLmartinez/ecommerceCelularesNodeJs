@@ -1,8 +1,5 @@
 <article class="col-xl-3 col-lg-4 col-md-6 col-12 ">
-    {{!-- 2 3 4 6 --}}
         <div class="card mb-2 " >
-        <!-- style="width: 18rem;" -->
-        {{!-- <img src="..." class="card-img-top"  alt="img-mascota"> --}}
         <div class="card-body">
             <img src="{{this.urlImg}}" alt="celular" class="card-img-top" >
             <h5>Marca: {{this.marca}}</h5>
@@ -10,7 +7,12 @@
                 {{!-- <p>Descripcion</p> --}}
                 <p>Celular {{this.marca}} {{this.modelo}}</p>
                 <p>Precio: $ <span class="badge rounded-pill bg-info text-dark">{{this.precio}}</span></p>
-            <button href="#" class="btn btn-primary w-100">Comprar</button>
+                <div class="mb-2">
+                    <button href="#" class="btn btn-secondary w-100">Editar</button>
+                </div>
+                <div class="mb-2">
+                    <button href="#" class="btn btn-danger w-100">Eliminar</button>
+                </div>
         </div>
     </div>
 </article>

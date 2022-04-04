@@ -1,13 +1,22 @@
 const express = require('express')
-const { leerMacostas, agregarMascotas } = require('../controllers/adopcion.controllers')
+const { leerCelulares, agregarCelulares,leerCelularesCRUD } = require('../controllers/celulares.controllers')
 const router = express.Router()
 
 
-router.get('/adopciones', leerMacostas)
-router.post('/adopciones', agregarMascotas)
+router.get('/celulares', leerCelulares)
 
-router.get('/formulario', (req,res)=>{
-    res.render('formAdopciones')
+router.post('/celCrud', agregarCelulares)
+
+router.get('/celCrud',  leerCelularesCRUD)
+
+// (req,res)=>{
+//     res.render('formCelulares')
+// }
+router.get('/FAQ', (req,res)=>{
+    res.render('FAQ')
+})
+router.get('/contacto', (req,res)=>{
+    res.render('contacto')
 })
 
 router.get('/', (req,res)=>{
