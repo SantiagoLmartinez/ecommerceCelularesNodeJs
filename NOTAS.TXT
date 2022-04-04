@@ -1,0 +1,6 @@
+POR HACER/REVISAR
+-Validaciones de formulario CRUD
+-LOGIN DE ADMIN
+-TRABAJAR INDEX
+
+HECHO

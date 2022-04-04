@@ -52,7 +52,6 @@ const editarCelularCRUD = async (req,res) =>{
     try {
         const celular = await Celular.findByIdAndUpdate(id,{marca,modelo,precio,urlImg})
         console.log(celular) 
-        // res.render('formCelulares', { celular })
         res.redirect('/celCrud')
     } catch (error) {
 
@@ -64,8 +63,6 @@ const eliminarCelularCRUD = async (req, res) =>{
     console.log(req.params)
     try {
         await Celular.findByIdAndDelete( id ) 
-        // await Celular.findOneAndDelete(id)
-
         res.redirect('/celCrud')
     } catch (error) {
         console.log('algo fallo al eliminar',error)
