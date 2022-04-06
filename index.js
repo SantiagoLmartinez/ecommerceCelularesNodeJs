@@ -19,6 +19,7 @@ app.set('views', './src/views')
 app.use(express.static(__dirname + '/src/public'))
 app.use(express.urlencoded({ extended: true }))
 app.use('/', require('./src/routes/index.routes'))
+app.use('/auth', require('./src/routes/auth.routes'))
 
 
 app.listen(PORT, () => console.log('server on', PORT))
